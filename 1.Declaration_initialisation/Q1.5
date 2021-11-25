@@ -7,6 +7,17 @@ Answer :
         int j;  //Definition
         
 What is the difference between Declaration and definition?
+
+1. A variable definition tells the compiler where (Memory section - stack, heap, code and data) and how much storage to create for the variable.
+  eg: int i,j,k;
+2. The line int i, j, k; declares and defines the variables i, j, and k; which instruct the compiler to create variables named i, j and k of type int.
+3. Memory will be allocated
+
+1. A variable declaration provides assurance to the compiler that there exists a variable with the given type and name so that the compiler can proceed for further compilation without requiring the complete detail about the variable.
+  eg: extern int a, b;
+2. A variable declaration is useful when you are using multiple files.
+3. Memory will not be allocated during declaration
+
           Definition                            Declaration
           
 1. Space is reserved for variable and       Identifies the type of variable
